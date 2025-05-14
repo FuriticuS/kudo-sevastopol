@@ -1,0 +1,24 @@
+:root {
+    --dark-color: #000000;
+    --light-color: #ffffff;
+    --primary-color: #e60023;
+    --gray-color: #5f646d;
+    --dark-hover-color: #161616;
+}
+
+body {
+    background-color: var(--dark-color);
+}
+
+p, li, h1, h2, h3, h4, h5, h6, span, pre, a, abbr, acronym, address, big, cite, code{
+    color: var(--light-color);
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.fp-watermark {
+    display: none !important;
+}
