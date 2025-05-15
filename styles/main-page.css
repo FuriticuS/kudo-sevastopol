@@ -1,0 +1,122 @@
+header {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    background: var(--dark-color);
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 90px;
+    height: 90px;
+}
+
+.header-logo img{
+    width: 100%;
+}
+
+.header-menu ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-menu ul li {
+    margin-left: 15px;
+}
+
+.section-item-fill-bg {
+    background: url('/images/header-bg/1jpg.jpg') center / cover no-repeat;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: rgba(95,100,109,.5);
+}
+
+.header-text h1 {
+    margin: auto;
+}
+
+.header-text .header-btn {
+    margin-bottom: 60px;
+}
+
+.founder, .definition {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    padding: 28px;
+    position: relative;
+    background: var(--light-color);
+    border-radius: 4px;
+}
+
+.founder-text-block {
+    width: 75%;
+}
+
+.founder-text {
+    font-size: 65px;
+    color: var(--dark-color);
+    font-family: "Manrope Bold", sans-serif;
+    margin-bottom: 28px;
+}
+
+.founder .subtitle {
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.founder .subtitle span {
+    color: var(--dark-color);
+}
+
+.founder-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.definition h1 {
+    color: var(--dark-color);
+    margin-bottom: 28px;
+}
+
+.definition p {
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--dark-color);
+    margin-bottom: 8px;
+}
+
+.definition .def-img {
+    position: absolute;
+    bottom: -70px;
+    width: 265px;
+    height: 200px;
+}
+
+.definition .def-img-1 {
+    left: 28px;
+}
+.definition .def-img-2 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.definition .def-img-3 {
+    right: 28px;
+}
