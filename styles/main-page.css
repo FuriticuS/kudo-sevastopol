@@ -1,9 +1,36 @@
+.header-wrapper-block {
+    display: block;
+    position: relative;
+    height: 100vh;
+}
+
+.header-video {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
 header {
     display: flex;
     flex-direction: row;
     height: 100px;
     background: var(--dark-color);
-    border-bottom: 1px solid var(--gray-color);
 }
 
 .header {
@@ -43,10 +70,11 @@ header {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    background: rgba(95,100,109,.5);
+    background: rgba(29, 29, 29,.7);
 }
 
 .header-text h1 {
+    font-size: 100px;
     margin: auto;
 }
 
@@ -106,17 +134,38 @@ header {
 .definition .def-img {
     position: absolute;
     bottom: -70px;
-    width: 265px;
-    height: 200px;
+    width: 215px;
+    height: 215px;
+}
+
+.polaroid {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: -12px;
+    bottom: -36px;
+    right: -12px;
+    background: url('/images/lines/polaroid.png') center / cover no-repeat;
+}
+
+.definition .def-img img{
+    width: 100%;
 }
 
 .definition .def-img-1 {
+    bottom: -90px;
     left: 28px;
+    background: url('/images/definition/def-1.jpg') center / cover no-repeat;
+    transform: rotate(-25deg);
 }
 .definition .def-img-2 {
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%);
+    transform: rotate(5deg);
+    background: url('/images/definition/def-2jpeg.jpeg') center / cover no-repeat;
 }
 .definition .def-img-3 {
-    right: 28px;
+    right: 200px;
+    transform: rotate(-5deg);
+    background: url('/images/definition/def-3.png') center / cover no-repeat;
 }
