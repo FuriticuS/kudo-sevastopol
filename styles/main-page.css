@@ -45,11 +45,11 @@ header {
     height: 90px;
 }
 
-.header-logo img{
+.header-logo img {
     width: 100%;
 }
 
-.header-menu ul{
+.header-menu ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -70,7 +70,7 @@ header {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    background: rgba(29, 29, 29,.7);
+    background: rgba(29, 29, 29, .9);
 }
 
 .header-text h1 {
@@ -82,7 +82,7 @@ header {
     margin-bottom: 60px;
 }
 
-.founder, .definition {
+.founder, .definition, .address {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -119,12 +119,12 @@ header {
     right: 0;
 }
 
-.definition h1 {
+.definition h1, .main-club h1, .address h1 {
     color: var(--dark-color);
     margin-bottom: 28px;
 }
 
-.definition p {
+.definition p, .main-club p, .address p{
     font-size: 20px;
     line-height: 24px;
     color: var(--dark-color);
@@ -148,7 +148,7 @@ header {
     background: url('/images/lines/polaroid.png') center / cover no-repeat;
 }
 
-.definition .def-img img{
+.definition .def-img img {
     width: 100%;
 }
 
@@ -158,14 +158,198 @@ header {
     background: url('/images/definition/def-1.jpg') center / cover no-repeat;
     transform: rotate(-25deg);
 }
+
 .definition .def-img-2 {
     left: 20%;
     transform: translateX(-50%);
     transform: rotate(5deg);
     background: url('/images/definition/def-2jpeg.jpeg') center / cover no-repeat;
 }
+
 .definition .def-img-3 {
     right: 200px;
     transform: rotate(-5deg);
     background: url('/images/definition/def-3.png') center / cover no-repeat;
 }
+
+.main-club {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: var(--light-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.main-club .main-club-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 28px;
+}
+
+.main-club .main-club-slider {
+    display: flex;
+    width: 40%;
+}
+
+.main-club .main-club-slider .swiper-wrapper {
+    width: 575px;
+}
+
+.main-club .main-club-slider .slide1 {
+    background: url("/images/tokio/1.jpg") center / cover no-repeat;
+");
+}
+
+.main-club .main-club-slider .slide2 {
+    background: url("/images/tokio/2.jpg") center / cover no-repeat;
+");
+}
+
+.main-club .main-club-slider .slide3 {
+    background: url("/images/tokio/3.jpg") center / cover no-repeat;
+");
+}
+
+.main-club .main-club-slider .slide4 {
+    background: url("/images/tokio/4.jpg") center / cover no-repeat;
+");
+}
+
+.main-club .main-club-slider .slide5 {
+    background: url("/images/tokio/5.jpg") center / cover no-repeat;
+");
+}
+
+.address {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.address .address-text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 28px 0 0 28px;
+}
+
+.address .address-text .strong {
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.address .address-text .underline {
+    color: var(--dark-color);
+    border-bottom: 2px solid var(--dark-color);
+}
+
+.address .address-text a {
+    text-transform: none;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--dark-color);
+    margin-bottom: 8px;
+}
+
+.address .address-text a:hover {
+    color: var(--primary-color);
+}
+
+.section-club {
+    background: url(/images/lines/brush-red.png) center center no-repeat;
+}
+
+.section-address {
+    background: url(/images/lines/brush-red.png) bottom center no-repeat;
+}
+
+.section-footer {
+    background: url(/images/lines/brush-red.png) bottom no-repeat;
+}
+
+.address .address-map {
+    display: flex;
+    width: 60%;
+}
+
+.footer-reviews {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+
+.footer-reviews h1 {
+    margin-top: 24px;
+    text-align: center;
+    color: var(--light-color);
+}
+
+.footer-reviews-slider {
+    height: 500px;
+    margin-top: 24px;
+    background: var(--light-color);
+}
+
+.footer-reviews-slider .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-reviews-slider .swiper-slide {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-reviews-slider .swiper-slide .swiper-footer-img {
+    display: flex;
+    width: 40%;
+    height: 500px;
+}
+
+.sw-footer-img1 {
+    background: url("/images/reviews/1.jpg") center / cover no-repeat;
+");
+}
+
+.sw-footer-img2 {
+    background: url("/images/reviews/2.jpg") center / cover no-repeat;
+");
+}
+
+.footer-reviews-slider .swiper-slide-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: 24px 24px 0 24px;
+}
+
+.footer-reviews-slider .swiper-slide-text p {
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--dark-color);
+    font-style: italic;
+}
+
+.footer-reviews-slider .swiper-slide-text .swiper-slide-text-user {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-reviews-slider .swiper-slide-text .swiper-slide-text-user .strong {
+    color: var(--dark-color);
+    font-weight: 800;
+}
+
+footer {
+    display: flex;
+    height: 30%;
+}
+
