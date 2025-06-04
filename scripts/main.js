@@ -94,3 +94,22 @@ const swiperFooter = new Swiper('.swiper-footer', {
         delay: 5000,
     }
 });
+
+// Показ стрелочки "Наверх" при прокрутке
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > window.innerHeight) {
+        scrollToTopButton.classList.add('visible');
+    } else {
+        scrollToTopButton.classList.remove('visible');
+    }
+});
+
+// Прокрутка вверх при клике
+scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
