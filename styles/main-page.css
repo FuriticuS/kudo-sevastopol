@@ -260,6 +260,10 @@ header {
     color: var(--primary-color);
 }
 
+.address .address-text .address-schedule {
+    margin-top: 20px;
+}
+
 .section-club {
     background: url(/images/lines/brush-red.png) center center no-repeat;
 }
@@ -366,6 +370,10 @@ footer {
     width: 100%;
 }
 
+.footer a:hover {
+    color: var(--dark-color);
+}
+
 .footer .footer-menu{
     display: flex;
     flex-direction: column;
@@ -394,11 +402,6 @@ footer {
 
 .footer .footer-menu ul li a:hover {
     color: var(--dark-color);
-}
-
-.footer-kudo-social a {
-    width: 70px;
-    height: 70px;
 }
 
 .footer-kudo-russia img {
@@ -433,4 +436,95 @@ footer {
 .scroll-to-top.visible {
     opacity: 1;
     visibility: visible;
+}
+
+.footer .footer-kudo-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-kudo-social-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer .footer-kudo-social-phone,
+.footer .footer-kudo-social-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 105px;
+    margin-bottom: 24px;
+}
+
+.footer-kudo-social-phone a{
+    background: var(--light-color);
+    color: var(--dark-color);
+}
+
+.footer-kudo-social-phone a:hover{
+    background:var(--dark-color);
+    color: var(--light-color);
+}
+
+.footer .footer-kudo-social-phone p,
+.footer .footer-kudo-social-link p {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.footer .footer-kudo-social-privacy {
+    font-size: 12px;
+}
+
+.footer .footer-kudo-social-link .footer-kudo-social-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .footer-kudo-social-link .footer-kudo-social-links a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    height: 45px;
+}
+
+.footer .footer-kudo-social-link .footer-kudo-social-links a{
+    fill: var(--light-color);
+}
+
+.footer .footer-kudo-social-link .footer-kudo-social-links a:hover {
+    fill: var(--dark-color);
+}
+
+.footer .footer-kudo-social-link .footer-kudo-social-links svg{
+    margin-right: 12px;
+    height: 44px;
+    width: 44px;
+}
+
+.footer .footer-kudo-russia {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.footer .footer-kudo-russia a,
+.footer .footer-menu a{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    line-height: 0;
+}
+
+.footer .footer-kudo-russia p {
+    margin-bottom: 12px;
+    flex-wrap: wrap;
 }
